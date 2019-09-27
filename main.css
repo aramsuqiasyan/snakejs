@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 100px 100px 100px;
+}
+
+.field{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url('field.png');
+    background-size: 130px;
+}
+
+.excel{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+
+.mouse1{
+    background: url('candy.png');
+    background-size: contain;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+.mouse2{
+    background: url('candy2.png');
+    background-size: contain;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+.mouse3{
+    background: url('candy3.png');
+    background-size: contain;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+.snakeBody{
+    background: url('body.jpg');
+    border-radius: 50%;
+    background-size: 100px;
+    background-position: center;
+    box-shadow: 0 3px 5px black;
+}
+
+.head{
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 3px 5px black;
+
+}
+
+.head::after{
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: red;
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.head::before{
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: red;
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.score{
+    display: block;
+    margin: 50px auto;
+    padding: 5px 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
